@@ -1,0 +1,29 @@
+.promo {
+  padding-left: 17px;
+  padding-right: 18px;
+  padding-top: 32px;
+  padding-bottom: 11px;
+  text-align: center;
+  background-color: $white;
+  position: relative;
+}
+
+.promo__title {
+  margin: 0;
+  position: relative;
+  margin-bottom: 28px;
+  padding: 0 3px 0 16px;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+  padding-left: 10px;
+}

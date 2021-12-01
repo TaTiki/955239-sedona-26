@@ -1,0 +1,23 @@
+.main-menu__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  box-shadow: inset 0 -10px 10px -9px rgba(0, 1, 1, 0.2);
+}
+
+.main-menu__item {
+  font-family: $basic-font-family;
+  text-align: center;
+  padding: 20px 11px 17px 0;
+  border: 0;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  line-height: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $light-grey-blue;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

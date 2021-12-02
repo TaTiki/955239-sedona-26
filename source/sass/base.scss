@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  font-family: $basic-font-family;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: block;
+  background-color: #ffffff;
+}

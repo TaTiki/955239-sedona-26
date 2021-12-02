@@ -1,0 +1,72 @@
+.main-header {
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin-left: -51px;
+}
+
+.main-header__logo-picture {
+  height: auto;
+}
+
+.main-header__top {
+  justify-content: flex-start;
+  align-items: center;
+  height: 54px;
+}
+
+.main-header__intro {
+  min-height: 390px;
+  background-image: url("../../img/back-mobile.jpg");
+  background-color: $light-grey-blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: bottom;
+}
+
+
+.main-header__title {
+  width: 281px;
+  height: auto;
+  padding-top: 10px;
+}
+
+.main-header__intro::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 58px;
+  left: 0;
+  bottom: 0;
+  background-image: url("../../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-header__intro-fond {
+  display: none;
+}
+
+/* catalog */
+
+.main-header__inner {
+  height: 158px;
+  padding-bottom: 17px;
+  background-size: auto, auto;
+  background-position: 45% 90%;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

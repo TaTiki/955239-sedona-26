@@ -70,3 +70,90 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-header__intro {
+    min-height: 518px;
+    padding-bottom: 18px;
+    background-image: url("../../img/mountain-mobile.jpg");
+  }
+
+  .main-header__intro::after {
+    background-image: url("../../img/intro-triangle-mobile.svg");
+  }
+
+  .main-header__top {
+    display: block;
+    height: 0;
+  }
+
+  .main-header__logo {
+    top: 0;
+  }
+
+  .main-header__logo-picture {
+    width: 102px;
+    height: auto;
+  }
+
+  .main-header__title {
+    width: 460px;
+    padding-top: 4px;;
+  }
+
+  .main-header__inner {
+    height: 290px;
+    background-position: left bottom, left bottom;
+    background-size: cover;
+    width: 100%;
+    background-image: url("../../img/form-mountain-mobile.jpg");
+  }
+
+  .main-header__inner .main-header__title {
+    width: 460px;
+    height: auto;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__intro {
+    background-color: #96aac7;
+    padding: 62px 73px 72px;
+    min-height: 519px;
+    background-size: cover;
+    height: 54px;
+    background-image: url("../../img/mountain-desktop.jpg");
+  }
+
+  .main-header__title {
+    width: 461px;
+  }
+
+  .main-header__logo {
+    position: absolute;
+    left: 46%;
+  }
+
+  .main-header__logo-picture {
+    height: auto;
+    width: 186px;
+  }
+
+  .main-header__intro::after {
+    background-image: url("../../img/intro-triangle-desktop.svg");
+  }
+
+  .main-header__inner {
+    height: 300px;
+    background-position: left bottom, left bottom;
+    background-size: cover;
+    padding-bottom: 14px;
+    background-image: url("../../img/form-mountain-desktop.jpg");
+  }
+}

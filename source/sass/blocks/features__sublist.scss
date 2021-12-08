@@ -21,8 +21,7 @@
 @media (min-width: $tablet-width) {
   .features__sublist {
     display: grid;
-    padding-bottom: 63px;
-    padding-top: 100px;
+    padding: 42px 40px 63px 33px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -33,7 +32,6 @@
     color: #000000;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-top: 55px;
   }
 
   .features__sublist .features__text {
@@ -48,9 +46,6 @@
 @media (min-width: $desktop-width) {
   .features__sublist {
     padding-bottom: 82px;
-  }
-
-  .features__sublist .features__item {
     padding-left: 46px;
     padding-right: 47px;
   }

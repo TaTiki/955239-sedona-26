@@ -1,21 +1,11 @@
 .promo {
-  padding-left: 17px;
-  padding-right: 18px;
-  padding-top: 32px;
-  padding-bottom: 11px;
+  padding-left: 2px;
+  padding-right: 9px;
+  padding-top: 39px;
+  padding-bottom: 6px;
   text-align: center;
   background-color: $white;
   position: relative;
-}
-
-.promo__title {
-  margin: 0;
-  position: relative;
-  margin-bottom: 28px;
-  padding: 0 3px 0 16px;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 
 .promo__description {
@@ -26,4 +16,53 @@
   text-transform: uppercase;
   color: #333333;
   padding-left: 10px;
+}
+
+.promo__title {
+  margin: 0;
+  position: relative;
+  margin-bottom: 28px;
+  padding: 0 3px 0 16px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background: $white;
+    padding-top: 50px;
+    padding-bottom: 58px;
+  }
+
+  .promo__title {
+    margin-bottom: 37px;
+    padding: 0 93px 0 83px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .promo__description {
+    font-size: 14px;
+    padding: 2px 128px 1px 128px;
+    line-height: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding-top: 49px;
+    padding-bottom: 58px;
+  }
+
+  .promo__title {
+    line-height: 27px;
+    margin-bottom: 37px;
+    padding: 0 303px 0 295px;
+  }
+
+  .promo__description {
+    margin: 0 200px 0 191px;
+    padding-left: 126px;
+  }
 }

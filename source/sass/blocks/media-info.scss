@@ -20,5 +20,35 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #333333;
+  color: $gray-concrete;
+}
+
+@media (min-width: $tablet-width) {
+  .media-info {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 76px;
+    padding-bottom: 70px;
+  }
+
+  .media-info__title {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .media-info__description {
+    padding: 0 105px 0 101px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media-info {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 115px;
+  }
+
+  .media-info__description {
+    padding: 0 260px;
+  }
 }

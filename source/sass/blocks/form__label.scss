@@ -1,0 +1,138 @@
+.form__label {
+  margin-right: 14px;
+  line-height: 26px;
+  color: $gray-concrete;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.form__label--padding {
+  margin-bottom: 7px;
+  margin-left: 22px;
+}
+
+.form__label.form__label-radio {
+  position: relative;
+  display: flex;
+  text-align: left;
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 80px;
+}
+
+.form__label-radio::before {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: $white;
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.form__label-radio::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 19px;
+  width: 22px;
+  height: 22px;
+  background-color: $gray-concrete;
+  border-radius: 50%;
+  display: none;
+}
+
+.form__label.form__label-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+  padding-left: 78px;
+  text-transform: none;
+  padding-top: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__label-checkbox::before {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: $white;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.form__label-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  width: 24px;
+  height: 16px;
+  z-index: 2;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label.form__label-checkbox {
+    width: 216px;
+    margin-bottom: 47px;
+    padding-top: 13px;
+    margin-right: -18px;
+  }
+
+  .form__label.form__label-radio {
+    text-align: left;
+    margin-bottom: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 77px;
+  }
+
+  .form__label--padding {
+    margin-left: 48px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__label {
+    flex-shrink: 0;
+  }
+
+  .form__label.form__label-checkbox {
+    width: 259px;
+    margin-bottom: 47px;
+    margin-right: 0;
+
+    &:nth-of-type(4n) {
+      width: 201px;
+      margin-left: -22px;
+    }
+  }
+
+  .form__label-radio:hover::before,
+  .form__label-checkbox:hover::before {
+    background-color: $white;
+  }
+
+  .form__label-hidden {
+    display: none;
+  }
+
+  .form__label--padding {
+    margin: 0 15px 0 23px;
+  }
+}

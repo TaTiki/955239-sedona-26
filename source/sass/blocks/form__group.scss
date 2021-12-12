@@ -37,13 +37,13 @@
   .form__group--column {
     flex-direction: row;
     width: 48%;
+    margin: 0;
   }
 
   .form__group-wrapper--context {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 29px;
   }
 
   .form__group--phone {

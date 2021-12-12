@@ -8,10 +8,6 @@
   padding-bottom: 27px;
 }
 
-.form__container--communication .form__group-wrapper {
-  padding-bottom: 3px;
-}
-
 .form__container--impression {
   margin: 0 1px 17px 0;
   border-bottom: 1px solid #d6d6d6;
@@ -45,14 +41,12 @@
 
   .form__container--fullname {
     position: relative;
-    width: 349px;
+    width: 310px;
   }
 
   .form__container--fullname::before {
     position: absolute;
     content: "";
-    width: 1px;
-    height: 310px;
     background-color: #e5e5e5;
     top: 0;
     left: 24px;
@@ -65,9 +59,10 @@
 
   .form__container--impression {
     order: -1;
-    width: 324px;
+    width: 310px;
     margin-bottom: 48px;
     border: none;
+    padding-right: 60px;
   }
 
   .form__container--sights {
@@ -95,13 +90,16 @@
 
 @media (min-width: $desktop-width) {
   .form__container--fullname {
-    margin-left: 7px;
     padding-left: 98px;
-    width: 50%;
+    width: 400px;
 
     &::before {
       left: 17px;
     }
+  }
+
+  .form__container--communication {
+    margin-bottom: 65px;
   }
 
   .form__container--emotions {
@@ -109,6 +107,10 @@
   }
 
   .form__container--impression {
-    width: 480px;
+    width: 400px;
+  }
+
+  .form__container--sights {
+    margin-bottom: 63px;
   }
 }

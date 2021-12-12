@@ -34,11 +34,11 @@
   display: block;
 }
 
-.form__input-radio [type="radio"] {
+.form__input-radio {
   display: none;
 }
 
-.form__input-checkbox [type="checkbox"] {
+.form__input-checkbox {
   display: none;
 }
 
@@ -47,6 +47,12 @@
   resize: none;
   padding-top: 10px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__input-radio {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -75,7 +81,7 @@
 
     &:focus {
       background-color: $white;
-      border: 4px solid #e5e5e5;
+      border: 4px solid $white;
     }
   }
 }

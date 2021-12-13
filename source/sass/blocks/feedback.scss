@@ -24,7 +24,6 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding: 0 60px;
     margin: 0 auto;
     padding-top: 50px;
   }
@@ -39,11 +38,6 @@
   .feedback__title {
     font-size: 30px;
     margin-bottom: 31px;
-    padding: 0 84px 0 100px;
-  }
-
-  .feedback__description {
-    padding: 0 105px 0 126px;
   }
 }
 
@@ -56,8 +50,8 @@
 
   .feedback__form {
     padding-bottom: 62px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
   .feedback__title {

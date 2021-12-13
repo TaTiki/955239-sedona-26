@@ -20,5 +20,34 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #333333;
+  color: $gray-concrete;
+}
+
+@media (min-width: $tablet-width) {
+  .media-info {
+    padding: 0;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .media-info__title {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  .media-info__description {
+    padding: 0 105px 0 101px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media-info {
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  .media-info__description {
+    padding: 0 260px;
+  }
 }

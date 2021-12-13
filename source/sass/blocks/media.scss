@@ -1,5 +1,5 @@
 .media {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   background-color: $white;
 }
@@ -7,4 +7,15 @@
 .media__gallery {
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .media {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .media__gallery {
+    list-style-type: none;
+  }
 }

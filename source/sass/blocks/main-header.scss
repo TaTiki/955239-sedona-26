@@ -15,9 +15,9 @@
 }
 
 .main-header__top {
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  height: 54px;
+  height: 56px;
 }
 
 .main-header__intro {
@@ -95,12 +95,14 @@
   }
 
   .main-header__top {
-    display: block;
+    display: flex;
     height: 0;
   }
 
   .main-header__logo {
+    position: absolute;
     top: 0;
+    z-index: 10;
   }
 
   .main-header__logo-picture {
@@ -157,7 +159,7 @@
 
   .main-header__logo-picture {
     height: auto;
-    width: 186px;
+    width: 136px;
   }
 
   .main-header__inner {

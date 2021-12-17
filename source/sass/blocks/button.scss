@@ -1,0 +1,52 @@
+.button {
+  display: block;
+  border: 0;
+  background-color: $light-grey-blue;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: $faded-blue;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $cool-blue;
+  }
+}
+
+.button__text {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-right: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .button--review {
+    width: 324px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--review {
+    width: 480px;
+  }
+}

@@ -1,6 +1,6 @@
 .features__sublist {
   width: 100%;
-  padding: 26px 0 13px;
+  padding: 35px 0 9px;
   margin: 0;
   list-style: none;
   content: none;
@@ -13,7 +13,7 @@
 
 .features__sublist .features__text {
   padding-right: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 26px;
   padding-left: 0;
   padding-top: 0;
 }
@@ -29,9 +29,10 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
-    color: #000000;
+    color: $black;
     background-position: top center;
     background-repeat: no-repeat;
+    padding-top: 55px;
   }
 
   .features__sublist .features__text {
@@ -40,6 +41,7 @@
 
   .features__sublist .features__item {
     padding: 0;
+    padding-top: 91px;
   }
 }
 

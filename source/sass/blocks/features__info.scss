@@ -3,15 +3,12 @@
   line-height: 1.5;
   color: $white;
   margin: 0;
-  padding: 4px 12px 0 0;
 }
 
 .features__info--blue {
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .features__info:nth-child(2) {
@@ -21,7 +18,7 @@
 .features__info .features__title {
   color: $white;
   line-height: 23px;
-  padding-top: 38px;
+  padding-top: 39px;
 
   &::after {
     color: inherit;
@@ -40,7 +37,6 @@
 
 .features__info .features__text {
   color: $white;
-  margin: 0 19px 0 20px;
   padding-bottom: 41px;
 }
 

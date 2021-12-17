@@ -1,0 +1,29 @@
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  color: $white;
+  background-color: $light-grey-blue;
+  background-position: center;
+  fill: $white;
+  margin: 0 7px -16px 0;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 6px 7px -4px -1px;
+  }
+}

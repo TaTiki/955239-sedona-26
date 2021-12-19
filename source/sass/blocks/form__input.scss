@@ -6,18 +6,6 @@
   background-color: $white;
   border: 4px solid transparent;
   outline: 0;
-
-  &::-webkit-input-placeholder {
-    color: $black;
-  }
-
-  &::-moz-placeholder {
-    color: $black;
-  }
-
-  &:-ms-input-placeholder {
-    color: $black;
-  }
 }
 
 .form__input-icon-group {
@@ -46,6 +34,8 @@
   resize: none;
   padding-top: 10px;
   line-height: 24px;
+  color: $black;
+  font-family: $basic-font-family;
 }
 
 @media (min-width: $tablet-width) {

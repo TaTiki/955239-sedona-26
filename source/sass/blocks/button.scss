@@ -2,8 +2,8 @@
   display: block;
   border: 0;
   background-color: $light-grey-blue;
-  color: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
+  color: $white;
+  font-family: $basic-font-family;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -35,13 +35,16 @@
   font-size: 22px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-right: 4px;
+}
+
+.button--review {
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 @media (min-width: $tablet-width) {
   .button--review {
     width: 324px;
-    margin-left: 25px;
   }
 }
 

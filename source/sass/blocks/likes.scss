@@ -1,0 +1,34 @@
+.likes {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes__like-button {
+  padding: 0;
+  background: none;
+  border: transparent;
+  cursor: pointer;
+}
+
+.likes__count {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .likes {
+    padding-bottom: 6px;
+  }
+
+  .likes__count {
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .likes__like-button {
+    fill: $white;
+  }
+}

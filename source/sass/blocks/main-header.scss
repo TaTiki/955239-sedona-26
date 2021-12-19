@@ -153,8 +153,9 @@
   }
 
   .main-header__logo {
-    position: absolute;
-    left: 46%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 
   .main-header__logo-picture {

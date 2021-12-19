@@ -1,5 +1,4 @@
 .form__label {
-  margin-right: 14px;
   line-height: 26px;
   color: $gray-concrete;
   text-transform: uppercase;
@@ -7,21 +6,20 @@
 }
 
 .form__label--padding {
-  margin-bottom: 7px;
-  margin-left: 22px;
+  padding-left: 7px;
+  padding-bottom: 26px;
 }
 
 .form__label.form__label-radio {
   position: relative;
   display: flex;
   text-align: left;
-  margin-bottom: 13px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 28px;
   padding-left: 80px;
 }
 
@@ -34,7 +32,6 @@
   top: 0;
   left: 0;
   border-radius: 50%;
-  margin-right: 20px;
 }
 
 .form__label-radio::after {
@@ -53,7 +50,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 42px;
+  padding-bottom: 42px;
   padding-left: 78px;
   text-transform: none;
   padding-top: 12px;
@@ -83,6 +80,7 @@
   height: 16px;
   z-index: 2;
   display: none;
+  background-image: url("../../img/tick-form.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -91,38 +89,26 @@
   }
 
   .form__label.form__label-checkbox {
-    margin-bottom: 47px;
+    padding-bottom: 47px;
     padding-top: 13px;
-    margin-right: -18px;
   }
 
   .form__label.form__label-radio {
     text-align: left;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 37px;
     padding-left: 60px;
+    margin: 0;
   }
 
   .form__label--padding {
-    margin-left: 48px;
-    margin-bottom: 4px;
+    padding-bottom: 4px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__label {
     flex-shrink: 0;
-  }
-
-  .form__label.form__label-checkbox {
-    margin-bottom: 20px;
-    margin-right: 0;
-    padding-right: 20px;
-
-    /* &:nth-of-type(4n) {
-      width: 201px;
-      margin-left: -22px;
-    } */
   }
 
   .form__label-radio:hover::before,
@@ -135,6 +121,7 @@
   }
 
   .form__label--padding {
-    margin: 0 15px 0 23px;
+    padding: 0;
+    padding-right: 40px;
   }
 }

@@ -1,31 +1,24 @@
 .copyright-link {
   margin: 4px 6px 0 11px;
+}
 
-  @media (min-width: $tablet-width) {
+.copyright-link svg path:hover,
+.copyright-link svg path:focus {
+  fill: $light-grey-blue;
+}
+
+.copyright-link svg path:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright-link {
     margin: 21px 0 0 13px;
   }
-}
-
-.copyright-link:hover,
-.copyright-link:focus {
-  fill: #81b3d2;
-}
-
-.copyright-link:active {
-  opacity: 0.3;
 }
 
 @media (min-width: $desktop-width) {
   .copyright-link {
     margin-left: 14px;
-
-    &:hover,
-    &:focus {
-      fill: #81b3d2;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }

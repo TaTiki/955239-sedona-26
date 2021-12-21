@@ -27,8 +27,6 @@
 
   .form__legend--communication {
     position: relative;
-    padding-left: 36px;
-    padding-right: 20px;
     text-align: center;
     justify-content: center;
 
@@ -36,7 +34,7 @@
       position: absolute;
       content: "";
       height: 1px;
-      width: 125px;
+      width: 123px;
       flex-grow: 1;
       flex-shrink: 0;
       background: $light-grey-transperent;
@@ -48,7 +46,7 @@
       position: absolute;
       content: "";
       height: 1px;
-      width: 125px;
+      width: 123px;
       flex-grow: 1;
       flex-shrink: 0;
       background: $light-grey-transperent;
@@ -60,6 +58,30 @@
   .form__legend--sights {
     position: relative;
     justify-content: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 123px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      background: $light-grey-transperent;
+      top: 15%;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 123px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      background: $light-grey-transperent;
+      top: 15%;
+      right: 0;
+    }
   }
 
   .form__legend-fixed-content {
@@ -70,6 +92,30 @@
   .form__legend--review {
     position: relative;
     text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 123px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      background: $light-grey-transperent;
+      top: 15%;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 123px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      background: $light-grey-transperent;
+      top: 15%;
+      right: 0;
+    }
   }
 }
 
@@ -79,15 +125,23 @@
   }
 
   .form__legend--review::after {
-    width: 299px;
+    width: 280px;
   }
 
   .form__legend--review::before {
-    width: 299px;
+    width: 280px;
   }
 
   .form__legend--communication {
     padding-bottom: 71px;
+  }
+
+  .form__legend--communication::after {
+    width: 280px;
+  }
+
+  .form__legend--communication::before {
+    width: 280px;
   }
 
   .form__legend-fixed-content {

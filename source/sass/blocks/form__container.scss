@@ -40,7 +40,7 @@
     width: 1px;
     height: 303px;
     background-color: $light-grey-transperent;
-    top: -89px;
+    top: -78px;
     left: 0;
   }
 
@@ -49,7 +49,7 @@
   }
 
   .form__container--fullname .form__label {
-    padding-right: 35px;
+    padding-right: 14px;
   }
 
   .form__container--communication {
@@ -105,10 +105,6 @@
     &::before {
       display: none;
     }
-  }
-
-  .form__container--emotions {
-    padding-left: 27px;
   }
 
   .form__container--impression .form__legend {

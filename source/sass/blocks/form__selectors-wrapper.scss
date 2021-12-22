@@ -1,14 +1,17 @@
 .form__selectors-wrapper {
   display: flex;
   flex-direction: column;
+  padding-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .form__selectors-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 460px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 37px;
   }
 
   .form__selector-label--sights {
@@ -18,9 +21,9 @@
 
 @media (min-width: $desktop-width) {
   .form__selectors-wrapper {
-    flex-direction: row;
-    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 0;
+    padding-right: 0;
     margin: 0 auto;
-    justify-content: flex-start;
   }
 }

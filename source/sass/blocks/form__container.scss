@@ -6,29 +6,17 @@
 }
 
 .form__container--fullname {
-  padding-bottom: 27px;
+  padding-bottom: 16px;
 }
 
 .form__container--impression {
-  margin: 0 1px 17px 0;
-  border-bottom: 1px solid #d6d6d6;
-  padding-bottom: 14px;
-}
-
-.form__container--sights {
-  margin-bottom: -3px;
-}
-
-.form__container--impression .form__label-radio {
-  margin-top: 3px;
-}
-
-.form__container--impression .form__legend {
-  padding-bottom: 0;
+  padding-bottom: 29px;
 }
 
 .form__container--button {
   padding-bottom: 39px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,21 +24,32 @@
     padding: 0;
   }
 
-  .form__container--impression .form__label-radio {
-    margin-top: 5px;
+  .form__container--impression .form__legend {
+    padding-bottom: 57px;
   }
 
   .form__container--fullname {
     position: relative;
-    width: 310px;
+    width: 303px;
+    padding-left: 42px;
   }
 
   .form__container--fullname::before {
     position: absolute;
     content: "";
-    background-color: #e5e5e5;
-    top: 0;
-    left: 24px;
+    width: 1px;
+    height: 303px;
+    background-color: $light-grey-transperent;
+    top: -78px;
+    left: 0;
+  }
+
+  .form__container--fullname .form__legend {
+    padding-bottom: 57px;
+  }
+
+  .form__container--fullname .form__label {
+    padding-right: 14px;
   }
 
   .form__container--communication {
@@ -60,18 +59,27 @@
 
   .form__container--impression {
     order: -1;
-    width: 310px;
+    width: 303px;
     margin-bottom: 48px;
     border: none;
-    padding-right: 60px;
   }
 
   .form__container--sights {
     width: 100%;
   }
 
+  .form__container--sights .form__legend {
+    padding-bottom: 38px;
+  }
+
   .form__container--emotions {
     width: 100%;
+  }
+
+  .form__container--emotions .form__legend {
+    padding-bottom: 72px;
+    display: flex;
+    justify-content: center;
   }
 
   .form__container--review {
@@ -91,27 +99,19 @@
 
 @media (min-width: $desktop-width) {
   .form__container--fullname {
-    padding-left: 98px;
+    padding-left: 130px;
     width: 400px;
 
     &::before {
-      left: 17px;
+      display: none;
     }
   }
 
-  .form__container--communication {
-    margin-bottom: 65px;
-  }
-
-  .form__container--emotions {
-    padding-left: 27px;
+  .form__container--impression .form__legend {
+    padding-left: 58px;
   }
 
   .form__container--impression {
     width: 400px;
-  }
-
-  .form__container--sights {
-    margin-bottom: 63px;
   }
 }

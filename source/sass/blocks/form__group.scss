@@ -3,7 +3,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  margin-bottom: 19px;
+  padding-bottom: 34px;
 }
 
 .form__group--column {
@@ -11,21 +11,21 @@
   align-items: flex-start;
 }
 
-.form__group--phone {
-  margin-bottom: 11px;
-}
-
-.form__group-wrapper--context {
-  margin: -4px 3px 4px 0;
+.form__group-wrapper {
+  padding-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
+  .form__group {
+    padding-bottom: 20px;
+  }
+
   .form__group--column {
     margin-bottom: 22px;
   }
 
   .form__group-wrapper--context {
-    margin-bottom: 29px;
+    padding-bottom: 29px;
   }
 }
 
@@ -44,6 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 33px;
   }
 
   .form__group--phone {

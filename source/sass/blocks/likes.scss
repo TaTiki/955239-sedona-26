@@ -12,6 +12,15 @@
   cursor: pointer;
 }
 
+.likes__like-button svg path {
+  fill: $silver;
+}
+
+.likes__like-button svg:hover path,
+.likes__like-button svg:focus path {
+  fill: $silver-graphite;
+}
+
 .likes__count {
   font-weight: bold;
   font-size: 16px;
@@ -29,7 +38,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .likes__like-button {
+  .likes {
+    padding-right: 34px;
+  }
+
+  .likes__like-button svg path {
     fill: $white;
+  }
+
+  .likes__like-button svg:hover path,
+  .likes__like-button svg:focus path {
+    fill: $silver-c2;
   }
 }

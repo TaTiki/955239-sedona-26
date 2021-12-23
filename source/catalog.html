@@ -6,6 +6,7 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
     <body>
+      <div class="container">
         <header class="main-header">
           <nav class="main-menu main-menu--closed">
             <button class="main-menu__button" aria-label="открыть меню" type="button"></button>
@@ -27,6 +28,8 @@
         <div class="main-header__top">
           <a class="main-header__logo" href="index.html">
             <picture>
+              <source media="(min-width: 1200px)" srcset="../img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
               <img class="main-header__logo-picture" width="102" height="83" src="img/logotype-mobile.svg"
                 alt="City of Sedona">
             </picture>
@@ -49,6 +52,10 @@
             <article class="gallery-image">
               <a class="gallery-image__link" href="#">
                 <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                  srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                   <img class="gallery-image__image" src="./img/catalog/photo-1-mobile.jpg" alt="Sedona">
                 </picture>
               </a>
@@ -59,9 +66,9 @@
                 </div>
                 <div class="gallery-image__likes likes">
                   <button class="likes__like-button" type="submit">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                      </svg>
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="1" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                  </svg>
                   </button>
                   <span class="likes__count">1350</span>
                 </div>
@@ -72,6 +79,10 @@
             <article class="gallery-image">
               <a class="gallery-image__link" href="#">
                 <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)"
+                  srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                   <img class="gallery-image__image" src="./img/catalog/photo-2-mobile.jpg" alt="Sedona">
                 </picture>
               </a>
@@ -83,7 +94,7 @@
                 <div class="gallery-image__likes likes">
                   <button class="likes__like-button" type="submit">
                     <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      <path opacity="1" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                       </svg>
                   </button>
                   <span class="likes__count">143</span>
@@ -95,6 +106,10 @@
             <article class="gallery-image">
               <a class="gallery-image__link" href="#">
                 <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                  srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                   <img class="gallery-image__image" src="./img/catalog/photo-3-mobile.jpg" alt="Sedona">
                 </picture>
               </a>
@@ -106,7 +121,7 @@
                 <div class="gallery-image__likes likes">
                   <button class="likes__like-button" type="submit">
                     <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      <path opacity="1" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                       </svg>
                   </button>
                   <span class="likes__count">96</span>
@@ -118,6 +133,10 @@
             <article class="gallery-image">
               <a class="gallery-image__link" href="#">
                 <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                  srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                   <img class="gallery-image__image" src="./img/catalog/photo-4-mobile.jpg" alt="Sedona">
                 </picture>
               </a>
@@ -129,7 +148,7 @@
                 <div class="gallery-image__likes likes">
                   <button class="likes__like-button" type="submit">
                     <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      <path opacity="1" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                       </svg>
                   </button>
                   <span class="likes__count">254</span>
@@ -148,18 +167,15 @@
             подорожали в очередной раз!</p>
         </div>
         <div class="video-content__player">
-          <div class="video-content__screen">
             <picture>
+              <source media="(min-width:1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="video-content__image" src="./img/catalog/video-mobile.jpg" alt="видеопрезентация Седоны">
             </picture>
-          </div>
-          <div class="video-content__controls">
-            <div class="video-content__bar-wrapper">
+            <div class="video-content__control-buttons">
               <div class="video-content__bar">
                 <button class="video-content__drag"></button>
               </div>
-            </div>
-            <div class="video-content__control-buttons">
               <button class="video-content__button video-content__button--repeat">
                 <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z" fill="#5C6870"/>
@@ -179,8 +195,7 @@
                   </svg>
               </button>
             </div>
-          </div>
-          </div>
+        </div>
       </section>
     </main>
           <footer class="main-footer">
@@ -211,5 +226,6 @@
             </p>
           </footer>
         <script src="js/main.min.js"></script>
+      </div>
   </body>
 </html>

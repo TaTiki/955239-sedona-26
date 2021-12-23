@@ -6,6 +6,7 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
       <header class="main-header">
         <nav class="main-menu main-menu--closed">
           <button class="main-menu__button" aria-label="открыть меню" type="button"></button>
@@ -28,6 +29,8 @@
         <div class="main-header__top">
           <a class="main-header__logo" href="index.html">
             <picture>
+              <source media="(min-width: 1200px)" srcset="../img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
               <img class="main-header__logo-picture" width="102" height="83" src="img/logotype-mobile.svg"
                 alt="City of Sedona">
             </picture>
@@ -152,5 +155,6 @@
       </p>
     </footer>
   <script src="js/main.min.js"></script>
+    </div>
   </body>
 </html>

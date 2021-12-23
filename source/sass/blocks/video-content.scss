@@ -36,19 +36,24 @@
   background-color: $white;
 }
 
-/* .video-content__bar-wrapper {
+.video-content__control-buttons {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 45%, #f2f2f2 45%);
+  height: 110px;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  z-index: 2;
-  height: 45px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0 12px 0 22px;
-} */
+  bottom: 50px;
+  margin: 0 auto;
+}
 
 .video-content__bar {
   position: relative;
   width: 235px;
   height: 3px;
-  top: 50%;
+  top: 20%;
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -64,13 +69,6 @@
   border: none;
 }
 
-.video-content__control-buttons {
-  display: flex;
-  align-items: center;
-  height: 66px;
-  background-color: $gray-white;
-}
-
 .video-content__button--repeat {
   min-width: 16px;
   padding-left: 18px;
@@ -82,8 +80,7 @@
 
 .video-content__button--subtitle {
   min-width: 32px;
-  padding-left: auto;
-  padding-right: 19px;
+  padding-left: 159px;
   padding-top: 6px;
   bottom: 0;
   background-color: transparent;
@@ -101,24 +98,19 @@
 
 .video-content__button svg path {
   fill: $silver-graphite;
+}
 
-  &:hover,
-  &:focus {
-    fill: $black;
-  }
+.video-content__button svg:hover path,
+.video-content__button svg:focus path {
+  fill: $black;
+}
 
-  &:disabled {
-    opacity: 0.3;
-  }
+.video-content__button svg:disabled path {
+  opacity: 0.3;
 }
 
 .video-content__image {
   display: block;
-}
-
-.video-content__black {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 200px;
 }
 
 @media (min-width: $tablet-width) {
@@ -186,20 +178,20 @@
     bottom: 0;
     height: 93px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
   }
 
   .video-content__button svg path {
     fill: $white;
+  }
 
-    &:hover,
-    &:focus {
-      fill: $silver-c2;
-    }
+  .video-content__button svg:hover path,
+  .video-content__button svg:focus path {
+    fill: $silver-c2;
+  }
 
-    &:active {
-      fill: rgba(255, 255, 255, 0.3);
-    }
+  .video-content__button svg:active path {
+    fill: rgba(255, 255, 255, 0.3);
   }
 
   .video-content__button--subtitle {
@@ -225,14 +217,14 @@
   }
 
   .video-content__button--subtitle {
-    padding-left: 582px;
-    padding-right: 31px;
+    padding-left: 576px;
+    padding-right: 20px;
     padding-top: 0;
   }
 
   .video-content__button--repeat {
-    padding-left: 35px;
-    padding-right: 42px;
+    padding-left: 40px;
+    padding-right: 0;
     fill: $white;
     padding-top: 0;
   }

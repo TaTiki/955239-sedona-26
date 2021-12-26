@@ -6,7 +6,7 @@
 }
 
 .form__container--fullname {
-  padding-bottom: 16px;
+  padding-bottom: 21px;
 }
 
 .form__container--impression {
@@ -14,9 +14,13 @@
 }
 
 .form__container--button {
-  padding-bottom: 39px;
+  padding-bottom: 41px;
   display: flex;
   justify-content: center;
+}
+
+.form__container--emotions {
+  padding-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,8 +34,8 @@
 
   .form__container--fullname {
     position: relative;
-    width: 303px;
-    padding-left: 42px;
+    width: 266px;
+    margin-left: 5px;
   }
 
   .form__container--fullname::before {
@@ -41,7 +45,7 @@
     height: 303px;
     background-color: $light-grey-transperent;
     top: -78px;
-    left: 0;
+    left: -59px;
   }
 
   .form__container--fullname .form__legend {
@@ -60,8 +64,9 @@
   .form__container--impression {
     order: -1;
     width: 303px;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
     border: none;
+    margin-right: 74px;
   }
 
   .form__container--sights {
@@ -69,7 +74,7 @@
   }
 
   .form__container--sights .form__legend {
-    padding-bottom: 38px;
+    padding-bottom: 45px;
   }
 
   .form__container--emotions {
@@ -77,7 +82,7 @@
   }
 
   .form__container--emotions .form__legend {
-    padding-bottom: 72px;
+    padding-bottom: 59px;
     display: flex;
     justify-content: center;
   }
@@ -99,19 +104,30 @@
 
 @media (min-width: $desktop-width) {
   .form__container--fullname {
-    padding-left: 130px;
+    padding-left: 80px;
     width: 400px;
+  }
 
-    &::before {
-      display: none;
-    }
+  .form__container--fullname::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 303px;
+    background-color: $light-grey-transperent;
+    top: -78px;
+    left: 0;
+  }
+
+  .form__container--sights .form__legend {
+    margin-left: -15px;
   }
 
   .form__container--impression .form__legend {
-    padding-left: 58px;
+    padding-left: 78px;
   }
 
   .form__container--impression {
     width: 400px;
+    margin-bottom: 48px;
   }
 }

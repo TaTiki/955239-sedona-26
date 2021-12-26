@@ -35,9 +35,9 @@
 
 
 .main-header__title {
-  width: 281px;
+  width: 229px;
   height: auto;
-  padding-top: 10px;
+  margin-top: -20px;
 }
 
 .main-header__intro::after {
@@ -60,9 +60,7 @@
 
 .main-header__inner {
   height: 158px;
-  padding-bottom: 17px;
-  background-size: auto, auto;
-  background-position: 45% 90%;
+  background-position: 35% 91%;
   background-image: url("../img/form-mountain-mobile.jpg");
   background-color: $light-grey-blue;
   background-repeat: no-repeat;
@@ -91,7 +89,7 @@
 
   .main-header__intro {
     min-height: 518px;
-    padding-bottom: 18px;
+    padding-bottom: 56px;
     background-image: url("../img/mountain-mobile.jpg");
   }
 
@@ -113,44 +111,41 @@
 
   .main-header__title {
     width: 460px;
-    padding-top: 4px;
+    padding-top: 98px;
   }
 
   .main-header__inner {
-    height: 290px;
+    height: 345px;
     background-position: left bottom, left bottom;
     background-size: cover;
     width: 100%;
     background-image: url("../img/form-mountain-mobile.jpg");
   }
 
+  .main-header__inner::after {
+    height: 53px;
+  }
+
   .main-header__inner .main-header__title {
     width: 460px;
     height: auto;
-    padding-top: 0;
+    padding-top: 56px;
   }
 }
 
-@media screen and (min-width: $desktop-width) {
-  .main-header {
-    padding-bottom: 65px;
-  }
-
+@media (min-width: $desktop-width) {
   .main-header__intro {
     background-color: #96aac7;
-    padding: 62px 73px 72px;
+    padding: 48px 73px 6px;
     min-height: 519px;
     background-size: cover;
     height: 54px;
     background-image: url("../img/mountain-desktop.jpg");
   }
 
-  .main-header__intro::after {
-    bottom: 65px;
-  }
-
   .main-header__title {
     width: 461px;
+    padding: 0;
   }
 
   .main-header__logo {
@@ -166,14 +161,18 @@
   }
 
   .main-header__inner {
-    height: 300px;
+    height: 340px;
     background-position: left bottom, left bottom;
     background-size: cover;
     padding-bottom: 14px;
     background-image: url("../img/form-mountain-desktop.jpg");
   }
 
+  .main-header__inner .main-header__title {
+    padding-top: 70px;
+  }
+
   .main-header__inner::after {
-    bottom: 65px;
+    bottom: 0;
   }
 }

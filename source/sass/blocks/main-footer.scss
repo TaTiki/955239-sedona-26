@@ -40,8 +40,8 @@
 
 .main-footer__hashtag {
   text-align: center;
-  padding-top: 38px;
-  padding-bottom: 35px;
+  padding-top: 35px;
+  padding-bottom: 32px;
   margin: 0;
 }
 
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 45px;
+  padding-bottom: 43px;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,13 +68,12 @@
   }
 
   .main-footer__hashtag {
-    padding-top: 7px;
-    padding-left: -2px;
+    padding-top: 13px;
     padding-bottom: 0;
   }
 
   .main-footer__copyright {
-    margin-top: 8px;
+    margin-top: 9px;
   }
 }
 
@@ -83,13 +82,22 @@
   .main-footer {
     min-width: 1200px;
     position: relative;
+    padding-bottom: 24px;
+  }
+
+  .main-footer__copyright {
+    margin-top: 9px;
+    margin-left: 33px;
   }
 
   .main-footer__social {
     left: 13%;
+    margin-left: 23px;
   }
 
   .main-footer__hashtag {
-    padding-top: 23px;
+    padding-top: 12px;
+    margin-left: -1px;
+    margin-right: 11px;
   }
 }

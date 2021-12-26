@@ -1,28 +1,30 @@
 .features__sublist {
   width: 100%;
-  padding: 35px 0 9px;
+  padding: 28px 0 18px;
   margin: 0;
   list-style: none;
   content: none;
 }
 
 .features__sublist .features__item {
-  padding: 7px 19px 0 73px;
+  padding: 8px 3px 0 68px;
   text-align: left;
 }
 
 .features__sublist .features__text {
   padding-right: 20px;
-  padding-bottom: 26px;
+  padding-bottom: 14px;
   padding-left: 0;
   padding-top: 0;
+  line-height: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .features__sublist {
     display: grid;
-    padding: 42px 40px 63px 33px;
+    padding: 55px 36px 56px 36px;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 73px;
   }
 
   .features__sublist .features__title {
@@ -36,19 +38,26 @@
   }
 
   .features__sublist .features__text {
-    padding: 0;
+    padding: 0 3px 0 3px;
   }
 
   .features__sublist .features__item {
-    padding: 0;
-    padding-top: 91px;
+    padding-left: 0;
+    padding-top: 103px;
+    padding-right: 0;
+    padding-bottom: 1px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__sublist {
-    padding-bottom: 82px;
+    padding-bottom: 79px;
     padding-left: 46px;
     padding-right: 47px;
+    gap: 95px;
+  }
+
+  .features__sublist .features__text {
+    padding-top: 2px;
   }
 }

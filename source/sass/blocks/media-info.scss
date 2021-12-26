@@ -1,5 +1,5 @@
 .media-info {
-  padding-bottom: 43px;
+  padding-bottom: 32px;
   padding-top: 32px;
   text-align: center;
 }
@@ -7,11 +7,11 @@
 .media-info__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  margin-right: 7px;
+  margin-right: 0;
   margin-left: 3px;
   text-transform: uppercase;
 }
@@ -28,13 +28,13 @@
   .media-info {
     padding: 0;
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 78px;
   }
 
   .media-info__title {
     font-size: 30px;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
 
   .media-info__description {
@@ -45,11 +45,11 @@
 @media (min-width: $desktop-width) {
   .media-info {
     padding: 0;
-    padding-top: 40px;
-    padding-bottom: 67px;
+    padding-top: 103px;
+    padding-bottom: 79px;
   }
 
   .media-info__description {
-    padding: 0 260px;
+    padding: 0 383px 0 380px;
   }
 }

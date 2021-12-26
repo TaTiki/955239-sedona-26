@@ -8,7 +8,7 @@
   background-color: $light-grey-blue;
   background-position: center;
   fill: $white;
-  margin: 0 7px -16px 0;
+  margin: 0 4px -13px 3px;
 
   &:hover,
   &:focus {
@@ -21,6 +21,10 @@
 
   &:active svg {
     opacity: 0.3;
+  }
+
+  .social__link--facebook svg {
+    fill: $white;
   }
 
   @media (min-width: $tablet-width) {

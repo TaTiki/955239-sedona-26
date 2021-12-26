@@ -1,9 +1,5 @@
 .features {
   font-family: $basic-font-family;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 52px;
-  }
 }
 
 .features__text {
@@ -36,6 +32,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    margin-top: 52px;
+  }
+
   .features__image {
     line-height: 0;
     height: 256px;
@@ -58,6 +58,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    margin-top: 49px;
+  }
+
   .features__picture {
     width: 100%;
     height: auto;

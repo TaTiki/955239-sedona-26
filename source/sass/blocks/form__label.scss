@@ -7,8 +7,8 @@
 }
 
 .form__label--padding {
-  padding-left: 7px;
-  padding-bottom: 26px;
+  padding-left: 21px;
+  padding-bottom: 12px;
 }
 
 .form__label.form__label-radio {
@@ -51,10 +51,10 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding-bottom: 42px;
+  padding-bottom: 38px;
   padding-left: 78px;
   text-transform: none;
-  padding-top: 12px;
+  padding-top: 17px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -102,20 +102,21 @@
   }
 
   .form__label.form__label-checkbox {
-    padding-bottom: 47px;
-    padding-top: 13px;
+    padding-bottom: 2px;
+    padding-top: 17px;
+    padding-left: 81px;
   }
 
   .form__label.form__label-radio {
     text-align: left;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 37px;
     padding-left: 77px;
     margin: 0;
   }
 
   .form__label--padding {
-    padding-bottom: 4px;
+    padding-bottom: 11px;
   }
 }
 
@@ -130,6 +131,6 @@
 
   .form__label--padding {
     padding: 0;
-    padding-right: 40px;
+    padding-right: 18px;
   }
 }

@@ -102,8 +102,8 @@
   height: 30px;
   content: "";
   position: absolute;
-  top: 12px;
-  right: 21px;
+  top: 16px;
+  right: 11px;
   border: none;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@
     border-bottom: none;
     border-top: none;
     text-align: center;
-    padding: 25px 16px 20px 12px;
+    padding: 22px 11px 23px 14px;
     box-shadow: none;
     border-radius: 0;
     background-color: transparent;
@@ -216,5 +216,11 @@
 
   .main-menu__link:not([href]):active {
     color: rgba(118, 99, 87, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu__item {
+    padding: 23px 24px 21px 22px;
   }
 }

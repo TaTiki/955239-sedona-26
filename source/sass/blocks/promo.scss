@@ -2,7 +2,7 @@
   padding-left: 0;
   padding-right: 0;
   padding-top: 32px;
-  padding-bottom: 20px;
+  padding-bottom: 33px;
   text-align: center;
   background-color: $white;
   position: relative;
@@ -34,7 +34,7 @@
 .promo__title {
   margin: 0;
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
@@ -43,15 +43,15 @@
 @media (min-width: $tablet-width) {
   .promo {
     background: $white;
-    padding-top: 50px;
-    padding-bottom: 58px;
+    padding-top: 45px;
+    padding-bottom: 8px;
   }
 
   .promo__title {
     margin-bottom: 37px;
-    padding: 0 93px 0 83px;
-    font-size: 20px;
-    line-height: 25px;
+    padding: 0 104px 0 102px;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .promo__description {
@@ -64,12 +64,21 @@
 @media (min-width: $desktop-width) {
   .promo {
     padding: 0;
-    padding-top: 49px;
-    padding-bottom: 58px;
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
+
+  .promo::after {
+    bottom: 0;
+  }
+
+  .promo__description {
+    padding-top: 0;
   }
 
   .promo__title {
     line-height: 27px;
     margin-bottom: 37px;
+    padding: 0 355px 0 353px;
   }
 }

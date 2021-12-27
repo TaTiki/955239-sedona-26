@@ -2,3 +2,9 @@
   border: none;
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    padding-bottom: 16px;
+  }
+}

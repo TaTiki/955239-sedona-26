@@ -3,7 +3,6 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  padding-bottom: 13px;
 }
 
 .form__legend--sights {
@@ -29,6 +28,7 @@
     position: relative;
     text-align: center;
     justify-content: center;
+    padding-bottom: 23px;
 
     &::before {
       position: absolute;
@@ -38,7 +38,7 @@
       flex-grow: 1;
       flex-shrink: 0;
       background: $light-grey-transperent;
-      top: 15%;
+      top: 20%;
       left: 0;
     }
 
@@ -50,7 +50,7 @@
       flex-grow: 1;
       flex-shrink: 0;
       background: $light-grey-transperent;
-      top: 15%;
+      top: 20%;
       right: 0;
     }
   }
@@ -67,7 +67,7 @@
       flex-grow: 1;
       flex-shrink: 0;
       background: $light-grey-transperent;
-      top: 15%;
+      top: 27%;
       left: 0;
     }
 
@@ -79,7 +79,7 @@
       flex-grow: 1;
       flex-shrink: 0;
       background: $light-grey-transperent;
-      top: 15%;
+      top: 27%;
       right: 0;
     }
   }
@@ -101,7 +101,7 @@
       flex-grow: 1;
       flex-shrink: 0;
       background: $light-grey-transperent;
-      top: 15%;
+      top: 9%;
       left: 0;
     }
 
@@ -113,7 +113,7 @@
       flex-grow: 1;
       flex-shrink: 0;
       background: $light-grey-transperent;
-      top: 15%;
+      top: 9%;
       right: 0;
     }
   }
@@ -138,10 +138,12 @@
 
   .form__legend--communication::after {
     width: 280px;
+    top: 9%;
   }
 
   .form__legend--communication::before {
     width: 280px;
+    top: 9%;
   }
 
   .form__legend-fixed-content {
@@ -150,7 +152,6 @@
   }
 
   .form__legend--sights {
-    margin-bottom: 45px;
     margin-left: 0;
     padding-left: 0;
 

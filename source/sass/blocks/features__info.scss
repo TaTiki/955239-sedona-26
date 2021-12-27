@@ -18,7 +18,8 @@
 .features__info .features__title {
   color: $white;
   line-height: 23px;
-  padding-top: 39px;
+  padding-top: 53px;
+  font-size: 18px;
 
   &::after {
     color: inherit;
@@ -26,10 +27,6 @@
 }
 
 .features__info--bluing {
-  padding-top: 40px;
-  padding-bottom: 1px;
-  padding-left: 3px;
-  padding-right: 0;
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
@@ -40,18 +37,24 @@
   padding-bottom: 41px;
 }
 
+.features__info--bluing .features__title {
+  padding-top: 43px;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
 @media (min-width: $tablet-width) {
   .features__info {
     text-align: center;
   }
 
   .features__info--bluing {
-    padding: 45px 46px 35px;
-    height: 256px;
+    padding: 45px 16px 35px;
+    width: 30%;
   }
 
   .features__info--blue {
-    padding: 40px 32px 44px;
+    padding: 40px 18px 44px;
     width: 30%;
   }
 
@@ -64,6 +67,19 @@
   .features__info .features__title {
     padding-top: 0;
     line-height: 26px;
+    font-size: 21px;
+  }
+
+  .features__info--bluing .features__title {
+    padding-top: 0;
+    margin-bottom: 1px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-right: 5px;
+  }
+
+  .features__info--bluing .features__text {
+    margin: 5px 36px 0;
   }
 }
 
@@ -73,14 +89,23 @@
   }
 
   .features__info--blue {
-    padding: 47px 46px 35px;
+    padding: 47px 9px 35px;
   }
 
-  .features__info .features__text {
-    margin: 0 20px;
+  .features__info--bluing {
+    padding: 49px 9px 35px;
+  }
+
+  .features__info--bluing .features__title {
+    margin: 4px 70px 4px 69px;
+    padding: 0;
+  }
+
+  .features__info--bluing .features__text {
+    margin: 0 75px 0;
   }
 
   .features__info--blue .features__text {
-    margin: 0 39px;
+    margin: 0 46px;
   }
 }

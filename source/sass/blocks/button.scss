@@ -9,7 +9,7 @@
   cursor: pointer;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -38,13 +38,16 @@
 }
 
 .button--review {
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 43px;
+  padding-left: 46px;
+  padding-top: 22px;
+  padding-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .button--review {
     width: 324px;
+    padding-right: 55px;
   }
 }
 

@@ -65,14 +65,14 @@ const copyImages = () => {
 // SVG
 
 export const svg = () =>
-gulp.src('source/img/*.svg')
+gulp.src('source/img/**/*.svg')
 .pipe(svgo())
 .pipe(gulp.dest('build/img'))
 
 // Sprite
 
 const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
+  return gulp.src('source/img/catalog/icons/*.svg')
     .pipe(svgStore({
       inlineSvg: true
     }))

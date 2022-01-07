@@ -5,8 +5,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
-    box-shadow: -1rem 1rem 1rem rgba(black, 0.2);
+    background: $white;
+    box-shadow: -1rem 1rem 1rem rgba($black, 0.2);
     overflow: hidden;
     z-index: 9;
   }

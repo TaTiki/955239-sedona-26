@@ -3,7 +3,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  padding-bottom: 23px;
+  padding-bottom: 17px;
 }
 
 .form__group--column {
@@ -17,6 +17,10 @@
 }
 
 .form__group-wrapper {
+  padding-bottom: 30px;
+}
+
+.form__group--phone {
   padding-bottom: 25px;
 }
 
@@ -30,7 +34,7 @@
   }
 
   .form__group-wrapper--context {
-    padding-bottom: 13px;
+    padding-bottom: 10px;
   }
 }
 

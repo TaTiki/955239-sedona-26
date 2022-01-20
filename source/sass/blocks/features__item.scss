@@ -8,7 +8,7 @@
     font-size: 21px;
     background-image: url("../../img/icon-house.svg");
     background-size: 36px;
-    background-position: 22px 1px;
+    background-position: 22px 3px;
   }
 
   &--food {
@@ -22,16 +22,29 @@
     font-size: 21px;
     background-image: url("../../img/icon-gift.svg");
     background-size: 31px;
-    background-position: 25px -2px;
+    background-position: 25px 0;
   }
 }
 
 .features__item .features__text {
-  padding: 0 0 32px;
+  padding: 3px 1px 36px;
+  line-height: 22px;
+}
+
+.features__item--food .features__text {
+  padding: 2px 20px 14px 1px;
+}
+
+.features__item--home .features__text {
+  padding: 2px 1px 16px;
+}
+
+.features__item--gift .features__text {
+  padding: 3px 0 15px 1px;
 }
 
 .features__item--facts {
-  padding: 26px 38px 12px 33px;
+  padding: 26px 38px 17px 33px;
   background-color: #eeeeee;
   list-style-type: none;
   font-size: 12px;
@@ -76,31 +89,23 @@
     display: flex;
     flex-wrap: wrap;
     width: 33.33%;
-    padding: 43px 0 44px 0;
+    padding: 43px 0 41px 0;
   }
 
   .features__item--facts .features__item {
     padding: 27px;
   }
 
-  .features__item--facts .features__title {
-    margin-bottom: -1px;
-  }
-
   .features__item--facts .features__text {
     margin: 0 38px;
   }
 
+  .features__item--facts .features__text:nth-child(3) {
+    padding-top: 0;
+  }
+
   .features__item-wrapper {
     padding: 26px 46px;
-  }
-
-  .features__item .features__text {
-    padding: 0;
-  }
-
-  .features__item--gift .features__text {
-    padding: 0;
   }
 
   .features__item--wide {
@@ -108,7 +113,19 @@
     display: flex;
   }
 
-  .features__item--wide:nth-of-type(2) {
+  .features__item--food .features__text {
+    padding: 0 14px;
+  }
+
+  .features__item--gift .features__text {
+    padding: 0 2px 20px;
+  }
+
+  .features__item--home .features__text {
+    padding: 3px 8px;
+  }
+
+  .features__item:nth-of-type(3) {
     flex-direction: row-reverse;
   }
 }
@@ -120,11 +137,23 @@
 
   .features__item--facts {
     padding-top: 38px;
-    padding-bottom: 64px;
+    padding-bottom: 59px;
   }
 
   .features__item--facts .features__text {
     padding-right: 17px;
     padding-left: 17px;
+  }
+
+  .features__item--food .features__text {
+    padding: 5px 10px 0;
+  }
+
+  .features__item--home .features__text {
+    padding: 9px 8px 0;
+  }
+
+  .features__item--gift .features__text {
+    padding: 5px 49px 0 65px;
   }
 }

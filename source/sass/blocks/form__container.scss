@@ -6,7 +6,7 @@
 }
 
 .form__container--fullname {
-  padding-bottom: 21px;
+  padding-bottom: 26px;
 }
 
 .form__container--impression {
@@ -14,7 +14,7 @@
 }
 
 .form__container--button {
-  padding-bottom: 41px;
+  padding-bottom: 35px;
   display: flex;
   justify-content: center;
 }
@@ -29,7 +29,7 @@
   }
 
   .form__container--impression .form__legend {
-    padding-bottom: 57px;
+    padding-bottom: 59px;
   }
 
   .form__container--fullname {
@@ -49,7 +49,7 @@
   }
 
   .form__container--fullname .form__legend {
-    padding-bottom: 57px;
+    padding-bottom: 59px;
   }
 
   .form__container--fullname .form__label {
@@ -122,8 +122,17 @@
     margin-left: -15px;
   }
 
+  .form__container--emotions .form__legend {
+    padding-bottom: 56px;
+  }
+
   .form__container--impression .form__legend {
     padding-left: 78px;
+    padding-bottom: 56px;
+  }
+
+  .form__container--fullname .form__legend {
+    padding-bottom: 57px;
   }
 
   .form__container--impression {

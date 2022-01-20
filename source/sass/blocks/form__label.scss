@@ -8,7 +8,8 @@
 
 .form__label--padding {
   padding-left: 21px;
-  padding-bottom: 12px;
+  padding-bottom: 7px;
+  padding-top: 1px;
 }
 
 .form__label.form__label-radio {
@@ -131,6 +132,10 @@
 
   .form__label--padding {
     padding: 0;
-    padding-right: 18px;
+    padding-right: 17px;
+  }
+
+  .form__label.form__label-radio {
+    padding-top: 15px;
   }
 }

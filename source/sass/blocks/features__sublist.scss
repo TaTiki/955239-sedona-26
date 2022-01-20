@@ -11,20 +11,12 @@
   text-align: left;
 }
 
-.features__sublist .features__text {
-  padding-right: 20px;
-  padding-bottom: 14px;
-  padding-left: 0;
-  padding-top: 0;
-  line-height: 23px;
-}
-
 @media (min-width: $tablet-width) {
   .features__sublist {
     display: grid;
-    padding: 55px 36px 56px 36px;
+    padding: 53px 29px 56px;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 73px;
+    gap: 60px;
   }
 
   .features__sublist .features__title {
@@ -35,10 +27,6 @@
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 55px;
-  }
-
-  .features__sublist .features__text {
-    padding: 0 3px 0 3px;
   }
 
   .features__sublist .features__item {
@@ -55,9 +43,5 @@
     padding-left: 46px;
     padding-right: 47px;
     gap: 95px;
-  }
-
-  .features__sublist .features__text {
-    padding-top: 2px;
   }
 }

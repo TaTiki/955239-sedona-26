@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <header class="main-header">
-        <nav class="main-menu main-menu--closed">
+        <nav class="main-menu main-menu--closed main-menu__no-js">
           <button class="main-menu__button" aria-label="открыть меню" type="button"></button>
           <ul class="main-menu__list">
             <li class="main-menu__item">
@@ -41,7 +41,7 @@
           </a>
         </div>
         <div class="main-header__inner">
-          <img class="main-header__title" src="./img/catalog/sedona-slogan-mobile.svg" width="280" height="213" alt="City of Sedona">
+          <img class="main-header__title-minor" src="./img/catalog/sedona-slogan-mobile.svg" width="280" height="213" alt="City of Sedona">
         </div>
     </header>
     <main>
@@ -95,19 +95,18 @@
           </fieldset>
           <fieldset class="form__container form__container--impression">
             <legend class="form__legend">Ваше общее впечатление:</legend>
-            <input class="form__input-radio visually-hidden" type="radio" id="positive" name="radio" checked="">
-            <label for="positive" class="form__label form__label-radio">Скорее положительное</label>
-            <input class="form__input-radio visually-hidden" type="radio" id="negative" name="radio">
-            <label for="negative" class="form__label form__label-radio">Скорее отрицательное</label>
-            <input class="form__input-radio visually-hidden" type="radio" id="neutral" name="radio">
-            <label for="neutral" class="form__label form__label-radio">Затрудняюсь ответить</label>
+            <input class="form__input-radio visually-hidden" type="radio" id="positive" name="radio" value="on" checked="">
+            <label for="positive" class="form__label form__label-radio" >Скорее положительное</label>
+            <input class="form__input-radio visually-hidden" type="radio" id="negative" name="radio" value="off">
+            <label for="negative" class="form__label form__label-radio" >Скорее отрицательное</label>
+            <input class="form__input-radio visually-hidden" type="radio" id="neutral" name="radio" value="off">
+            <label for="neutral" class="form__label form__label-radio" >Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="form__container form__container--sights">
             <legend class="form__legend form__legend--sights"><span class="form__legend-fixed-content">Посещенные
                 достопримечательности:</span></legend>
             <div class="form__selectors-wrapper">
-              <input class="form__input-checkbox visually-hidden" type="checkbox" id="bridge" name="checkbox"
-                checked="">
+              <input class="form__input-checkbox visually-hidden" type="checkbox" id="bridge" name="checkbox" checked="">
               <label for="bridge" class="form__label form__label-checkbox"> Мост Дьявола</label>
               <input class="form__input-checkbox visually-hidden" type="checkbox" id="mount" name="checkbox" checked="">
               <label for="mount" class="form__label form__label-checkbox">Гора-Колокол</label>

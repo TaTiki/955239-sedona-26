@@ -1,9 +1,5 @@
 .main-menu {
   display: block;
-
-  &--opened {
-    display: block;
-  }
 }
 
 .main-menu__list {
@@ -68,6 +64,15 @@
   z-index: 10;
 }
 
+.main-menu--opened {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  background-color: $white;
+  width: 320px;
+  z-index: 11;
+}
 
 .main-menu--opened .main-menu__button {
   background-color: $light-grey-blue;
@@ -98,14 +103,15 @@
 }
 
 .main-menu__button {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   content: "";
   position: absolute;
   top: 16px;
   right: 11px;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .main-menu__button:hover {
@@ -165,16 +171,16 @@
   }
 
   .main-menu__item {
-    width: 16%;
+    width: 18%;
     border: 0;
     border-bottom: none;
     border-top: none;
     text-align: center;
-    padding: 22px 11px 23px 14px;
+    padding: 24px 6px 24px 7px;
     box-shadow: none;
     border-radius: 0;
     background-color: transparent;
-    font-size: 13px;
+    font-size: 14px;
 
     &:nth-of-type(2) {
       margin-right: 20%;
@@ -221,6 +227,6 @@
 
 @media (min-width: $desktop-width) {
   .main-menu__item {
-    padding: 23px 24px 21px 22px;
+    padding: 23px 14px 22px 9px;
   }
 }

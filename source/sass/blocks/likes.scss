@@ -10,6 +10,7 @@
   background: none;
   border: transparent;
   cursor: pointer;
+  margin-right: 12px;
 }
 
 .likes__like-button svg path {
@@ -24,6 +25,7 @@
 .likes__count {
   font-weight: bold;
   font-size: 16px;
+  margin-right: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,14 +34,22 @@
   }
 
   .likes__count {
-    margin-right: 26px;
-    padding-left: 10px;
+    margin-right: 17px;
+    padding-left: 4px;
+  }
+
+  .likes__like-button {
+    margin-right: 6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .likes {
-    padding-right: 38px;
+    width: 62px;
+  }
+
+  .likes__count {
+    font-size: 13px;
   }
 
   .likes__like-button svg path {

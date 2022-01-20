@@ -6,13 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="manifest" href="manifest.webmanifest">
   <link href="./css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header class="main-header">
-      <nav class="main-menu main-menu--closed">
+      <nav class="main-menu main-menu--closed main-menu__no-js">
         <button class="main-menu__button" aria-label="открыть меню" type="button"></button>
         <ul class="main-menu__list">
           <li class="main-menu__item main-menu__item--active">
@@ -66,6 +65,7 @@
               </picture>
             </div>
             </li>
+            <li class="features__item features__item--wide">
             <ul class="features__sublist">
               <li class="features__item features__item--home">
                 <h2 class="features__title-list">Жилье</h2>
@@ -74,7 +74,6 @@
                   кино!</p>
               </li>
               <li class="features__item features__item--gift">
-
                 <h2 class="features__title-list">Сувениры</h2>
                 <p class="features__text">Не только китайского, но и местного производства!</p>
               </li>
@@ -84,8 +83,9 @@
                   вы&nbsp;не разочаруетесь!</p>
               </li>
             </ul>
+          </li>
           <li class="features__item features__item--wide">
-            <div class="features__info features__info--blue">
+            <div class="features__info features__info--bluing">
               <h2 class="features__title">Там есть мост&nbsp;дьявола</h2>
               <p class="features__text">Да, по нему можно пройти!
                 Если вы осмелитесь,конечно</p>
@@ -93,21 +93,16 @@
             <div class="features__image">
               <picture>
                   <source media="(min-width:1200px)"
-                  srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                    srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width:768px)"
-                  srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                    srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
                   <img class="features__picture" width="320" height="260" src="img/photo-bridge@1x1.png" alt="bridge Devil">
-                  <source media="(min-width:1200px)"
-                  srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
-                  <source media="(min-width:768px)"
-                  srcset="img/main-bridge-tablet.webp 1x, img/main-bridge-tablet@2x.webp 2x">
-                <img class="features__picture" width="320" height="260" src="img/photo-bridge@1x 1.webp" alt="bridge Devil">
               </picture>
             </div>
           </li>
           <li class="features__item features__item--facts">
             <h2 class="features__title">Небольшая площадь</h2>
-            <p class="features__text">Все интиресные места
+            <p class="features__text">Все интересные места
               находятся очень близко</p>
           </li>
           <li class="features__item features__item--facts">
@@ -129,9 +124,7 @@
         <button class="apointment__button button">Найти гостиницу</button>
       </section>
       <div class="map">
-        <picture>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565775546!2d-111.83015785055562!3d34.854443815262655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1639491195552!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" title="Интерактивная карта Sedona"></iframe>
-        </picture>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565775546!2d-111.83015785055562!3d34.854443815262655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1639491195552!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" title="Интерактивная карта Sedona"></iframe>
       </div>
       </div>
     </main>

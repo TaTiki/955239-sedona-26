@@ -17,13 +17,13 @@
     z-index: 9;
   }
 
-  .modal__failure {
+  .modal--failure {
     display: none;
     width: 400px;
     padding: 38px 0 50px 0;
   }
 
-  .modal__success {
+  .modal--success {
     display: none;
     width: 640px;
   }
@@ -37,19 +37,19 @@
     font-size: 14px;
   }
 
-  .modal__failure .modal__title {
+  .modal--failure .modal__title {
     margin: 26px 90px 23px;
   }
 
-  .modal__success .modal__title {
+  .modal--success .modal__title {
     margin: 35px 90px 23px;
   }
 
-  .modal__failure .modal__text {
+  .modal--failure .modal__text {
     margin: 0 50px 35px;
   }
 
-  .modal__success .modal__text {
+  .modal--success .modal__text {
     margin: 0 107px 38px;
   }
 

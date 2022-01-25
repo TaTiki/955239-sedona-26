@@ -1,10 +1,22 @@
-.map iframe {
+/* .map iframe {
   border: none;
   display: block;
-}
+} */
 
 @media (min-width: $tablet-width) {
   .map {
     padding-bottom: 16px;
+  }
+
+  .map__search {
+    width: 768px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__search {
+    width: 1200px;
+    height: 350px;
   }
 }
